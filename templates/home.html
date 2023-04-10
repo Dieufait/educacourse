@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head> 
+    <title>Educa Courses</title>
+    {% include 'bootstrap.html' %}
+    
+  </head>
+  
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Educa Courses</h1>
+      <div class="row" style="margin-bottom:16px">
+     <div class="col-md-6">
+    <p class="lead">
+      Learning is essential on Educa as it is a website that aims to support education and promote lifelong learning. The website provides valuable resources and tools for educators, students, and parents to enhance the learning experience. For educators, Educa offers a variety of lesson plans, activities, and assessment tools that can help them develop effective teaching strategies to improve student engagement and academic performance. For students, the website provides access to a range of educational materials and tools that can help them succeed in their studies. Additionally, Educa provides valuable resources for parents to support their children's education.
+
+Overall, learning on Educa is essential because it helps individuals to develop new skills, enhance their knowledge, and achieve their goals. With its dedication to education and lifelong learning, Educa provides a valuable platform for educators, students, and parents to access educational resources, connect with like-minded individuals, and promote the importance of education in society.
+    </p>
+       </div>
+     <div class="d-none d-md-block col-md-6">
+     <img src="/static/Learn.jpg" style="height:320px; border-radius:4px" />
+       </div>
+   </div>  
+    <h2 class="text-center mt-2 mb-4">Course Availables</h2>
+    <div>
+      {% for course in courses%}
+        {% include 'courseitem.html'%}
+      {% endfor %}
+    </div>
+   <div class="text-center">
+     <a href="mailto:dieufait8@gmail.com?subject=Question%20about%20Course%20Avaible&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20questions%3A%20%3Center%20your%20questions%20here%3E" class="btn btn-primary btn-lg">Contact Us</a> 
+   </div>
+    </div>
+     {% include 'footer.html' %}
+  </body>
+</html>

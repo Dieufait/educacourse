@@ -1,2 +1,2 @@
 # educacourse
-Educa Course
+a website Educa Course for enrollment

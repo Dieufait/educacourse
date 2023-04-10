@@ -1,0 +1,26 @@
+<h4><img src="/static/form.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+Enrollment Form</h4>
+<form action = "/course/{{course['id']}}/enroll" method ="post">
+  
+  <div class="mb-2">
+    <label>Full Name</label><br>
+    <input type="text" required name="full_name" placeholder="Bruce Wayne">
+  </div>
+  
+  <div class="mb-2">
+    <label>Email</label><br>
+    <input type="email" required name="email" placeholder="Bruce@yahoo.com">
+  </div>
+  
+  <div class="mb-2">
+    <label>LinkedIn URL</label><br>
+    <input type="url" name="linkedin_url" placeholder="https://linked.com/in/bruce">
+  </div>
+  
+  <div class="mb-2">
+    <label>Grade</label><br>
+    <textarea name="grade"></textarea>
+  </div>
+
+  <input type="submit">
+</form>
