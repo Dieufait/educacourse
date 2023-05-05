@@ -11,6 +11,10 @@ def hello_educa():
   courses = load_courses_from_db()
   return render_template('home.html',courses=courses)
 
+@app.route("/about")
+def about():
+  return render_template('about.html')
+
 @app.route("/api/courses")
 def list_course():
   courses = load_courses_from_db()
